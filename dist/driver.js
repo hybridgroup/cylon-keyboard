@@ -32,17 +32,16 @@
       }
 
       Keyboard.prototype.start = function(callback) {
-        var key, _i, _len, _ref1, _results;
+        var key, _i, _len, _ref1;
         Logger.info("Keyboard " + this.device.name + " starting.");
         _ref1 = Cylon.KeyboardKeys;
-        _results = [];
         for (_i = 0, _len = _ref1.length; _i < _len; _i++) {
           key = _ref1[_i];
-          _results.push(this.defineDriverEvent({
+          this.defineDriverEvent({
             eventName: key
-          }));
+          });
         }
-        return _results;
+        return Keyboard.__super__.start.apply(this, arguments);
       };
 
       return Keyboard;

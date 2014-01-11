@@ -21,3 +21,5 @@ namespace "Cylon.Drivers", ->
 
       for key in Cylon.KeyboardKeys
         @defineDriverEvent eventName: key
+
+      super
