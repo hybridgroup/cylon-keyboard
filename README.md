@@ -1,3 +1,5 @@
+# Cylon.js For Keyboard Input
+
 Cylon.js (http://cylonjs.com) is a JavaScript framework for robotics and
 physical computing using Node.js
 
@@ -11,7 +13,7 @@ sister project Gobot (http://gobot.io).
 [![Build Status](https://secure.travis-ci.org/hybridgroup/cylon-keyboard.png?branch=master)](http://travis-ci.org/hybridgroup/cylon-keyboard)
 
 ## Getting Started
-Install the module with: `npm install cylon-kayboard`
+Install the module with: `npm install cylon-keyboard`
 
 ## Examples
 
