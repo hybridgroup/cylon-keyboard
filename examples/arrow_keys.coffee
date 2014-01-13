@@ -1,8 +1,8 @@
 Cylon = require 'cylon'
 
 Cylon.robot
-  device: { name: 'keyboard', driver: 'keyboard' }
   connection: { name: 'keyboard', adaptor: 'keyboard' }
+  device: { name: 'keyboard', driver: 'keyboard' }
   work: (my) ->
     my.keyboard.on 'up', (key) ->
       console.log "UP!"
