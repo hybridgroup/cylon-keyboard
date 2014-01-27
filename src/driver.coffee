@@ -16,6 +16,11 @@ namespace = require 'node-namespace'
 
 namespace "Cylon.Drivers", ->
   class @Keyboard extends Cylon.Driver
+    # Public: Starts the driver
+	#
+	# callback - params
+	#
+	# Returns null.  
     start: (callback) ->
       Logger.info "Keyboard #{@device.name} starting."
 
