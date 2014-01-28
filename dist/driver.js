@@ -31,6 +31,11 @@
         return _ref;
       }
 
+      # Public: Starts the driver
+      #
+      # callback - params
+      #
+      # Returns null.
       Keyboard.prototype.start = function(callback) {
         var key, _i, _len, _ref1;
         Logger.info("Keyboard " + this.device.name + " starting.");
