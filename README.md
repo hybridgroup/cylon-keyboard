@@ -78,7 +78,7 @@ complicate merges and should be done seperately.
 
 ## Release History
 
-[![NPM](https://nodei.co/npm/cylon-keyboard.png?compact=true)](https://nodei.co/npm/cylon-keyboard/)
+Version 0.2.0 - Update to cylon 0.10.0
 
 Version 0.1.0 - Initial release
 
