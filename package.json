@@ -1,7 +1,7 @@
 {
   "name": "cylon-keyboard",
   "version": "0.2.0",
-  "main": "dist/cylon-keyboard.js",
+  "main": "lib/cylon-keyboard.js",
   "description": "Cylon module for Keyboard",
   "homepage": "http://cylonjs.com",
   "bugs": "https://github.com/hybridgroup/cylon-keyboard/issues",
