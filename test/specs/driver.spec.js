@@ -1,18 +1,12 @@
-(function() {
-  'use strict';
-  var keyboard;
+'use strict';
 
-  keyboard = source("driver");
+var Keyboard = source("driver");
 
-  describe("Cylon.Drivers.Keyboard", function() {
-    var button;
-    button = new Cylon.Drivers.Keyboard({
-      name: 'keys',
-      device: {
-        connection: 'connect'
-      }
-    });
-    return it("needs tests");
+describe("Cylon.Drivers.Keyboard", function() {
+  var driver = new Keyboard({
+    name: 'keys',
+    device: { connection: 'connect' }
   });
 
-}).call(this);
+  it("needs tests");
+});

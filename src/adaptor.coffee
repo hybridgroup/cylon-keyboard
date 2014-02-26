@@ -21,9 +21,10 @@ namespace 'Cylon.Adaptors', ->
       super
       @connector = @keyboard = new Cylon.Keyboard
 
-
     connect: (callback) ->
       for key in Cylon.KeyboardKeys
         @defineAdaptorEvent eventName: key
 
       super
+
+module.exports = Cylon.Adaptors.Keyboard

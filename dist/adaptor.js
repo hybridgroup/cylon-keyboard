@@ -52,4 +52,6 @@
     })(Cylon.Adaptor);
   });
 
+  module.exports = Cylon.Adaptors.Keyboard;
+
 }).call(this);

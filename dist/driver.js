@@ -49,4 +49,6 @@
     })(Cylon.Driver);
   });
 
+  module.exports = Cylon.Drivers.Keyboard;
+
 }).call(this);
