@@ -78,6 +78,8 @@ complicate merges and should be done seperately.
 
 ## Release History
 
+Version 0.4.1 - BugFix ctrl-c not terminating the process.
+
 Version 0.4.0 - Update for Cylon.js 0.12.0
 
 Version 0.3.0 - Update for Cylon.js 0.11.0, refactor into pure JavaScript
