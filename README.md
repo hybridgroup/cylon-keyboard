@@ -78,6 +78,8 @@ complicate merges and should be done seperately.
 
 ## Release History
 
+Version 0.5.0 - Compatibility with Cylon 0.14.0, remove node-namespace.
+
 Version 0.4.1 - BugFix ctrl-c not terminating the process.
 
 Version 0.4.0 - Update for Cylon.js 0.12.0
