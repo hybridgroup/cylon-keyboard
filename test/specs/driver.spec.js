@@ -1,12 +1,32 @@
 'use strict';
 
-var Keyboard = source("driver");
+var Driver = source("driver");
 
 describe("Cylon.Drivers.Keyboard", function() {
-  var driver = new Keyboard({
+  var driver = new Driver({
     name: 'keys',
-    device: { connection: 'connect' }
+    device: {
+      connection: 'connect',
+      emit: spy()
+    }
   });
 
-  it("needs tests");
+  describe("#start", function() {
+    var callback;
+
+    beforeEach(function() {
+      callback = spy();
+
+      stub(driver, 'defineDriverEvent');
+      driver.start(callback);
+    });
+
+    afterEach(function() {
+      driver.defineDriverEvent.restore();
+    });
+
+    it('defines driver events for keys', function() {
+      expect(driver.defineDriverEvent).to.be.calledWith({ eventName: 'a' });
+    });
+  });
 });
