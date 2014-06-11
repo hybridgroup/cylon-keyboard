@@ -29,7 +29,7 @@ describe("Keyboard", function() {
     });
 
     it("binds a function to the 'keypress' event on stdin", function() {
-      expect(stdin.on).to.be.calledWith('keypress', keyboard.handleKeypress);
+      expect(stdin.on).to.be.calledWith('keypress');
     });
 
     it('sets raw mode to true', function() {
