@@ -78,6 +78,8 @@ complicate merges and should be done seperately.
 
 ## Release History
 
+Version 0.6.2 - Add peerDependencies to package.json
+
 Version 0.6.0 - Compatibility with Cylon 0.15.0, support for 'keydown', 'keypress', and 'keyup' events
 
 Version 0.5.0 - Compatibility with Cylon 0.14.0, remove node-namespace.
