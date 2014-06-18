@@ -15,9 +15,7 @@ sister project Gobot (http://gobot.io).
 ## Getting Started
 Install the module with: `npm install cylon-keyboard`
 
-## Examples
-
-### JavaScript
+## Example
 
 ```javascript
 var Cylon = require('cylon');
@@ -27,26 +25,11 @@ Cylon.robot({
   device: {name: 'keyboard', driver: 'keyboard'},
 
   work: function(my) {
-    my.keyboard.on('a', function(key) { 
+    my.keyboard.on('a', function(key) {
       console.log("A PRESSED!");
     });
   }
 }).start();
-```
-
-### CoffeeScript
-
-```
-Cylon = require 'cylon'
-
-Cylon.robot
-  device: { name: 'keyboard', driver: 'keyboard' }
-  connection: { name: 'keyboard', adaptor: 'keyboard' }
-  work: (my) ->
-    my.keyboard.on 'a', (key) ->
-      console.log "A PRESSED!"
-
-.start()
 ```
 
 ## Documentation
