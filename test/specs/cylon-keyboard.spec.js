@@ -37,7 +37,7 @@ describe("Cylon.Keyboard", function() {
 
   describe("#driver", function() {
     it("returns a new instance of the keyboard Driver", function() {
-      var opts = { device: {} }
+      var opts = { device: { connection: {} } }
       expect(module.driver(opts)).to.be.an.instanceOf(Driver);
     });
   });
