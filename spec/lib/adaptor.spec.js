@@ -7,9 +7,6 @@ var Keyboard = source('keyboard'),
 
 describe('Cylon.Adaptors.Keyboard', function() {
   var adaptor = new Adaptor({
-    connection: {
-      emit: spy()
-    }
   });
 
   describe('constructor', function() {
