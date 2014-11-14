@@ -5,7 +5,7 @@ var Driver = source("driver");
 describe("Cylon.Drivers.Keyboard", function() {
   var driver = new Driver({
     name: 'keys',
-    adaptor: {}
+    connection: {}
   });
 
   describe("#start", function() {
