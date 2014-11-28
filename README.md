@@ -61,6 +61,8 @@ complicate merges and should be done seperately.
 
 ## Release History
 
+Version 0.11.0 - Compatibility with Cylon 0.21.0
+
 Version 0.10.0 - Compatibility with Cylon 0.20.0
 
 Version 0.9.0 - Compatibility with Cylon 0.19.0
