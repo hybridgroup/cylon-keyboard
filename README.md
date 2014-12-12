@@ -21,8 +21,13 @@ Install the module with: `npm install cylon-keyboard`
 var Cylon = require('cylon');
 
 Cylon.robot({
-  connection: { name: 'keyboard', adaptor: 'keyboard' },
-  device: {name: 'keyboard', driver: 'keyboard'},
+  connections: {
+    keyboard: { adaptor: 'keyboard' }
+  },
+
+  devices: {
+    keyboard: { driver: 'keyboard' }
+  },
 
   work: function(my) {
     my.keyboard.on('a', function(key) {
