@@ -1,10 +1,11 @@
-'use strict';
+/* jshint expr:true */
+"use strict";
 
 var Driver = source("driver");
 
 describe("Cylon.Drivers.Keyboard", function() {
   var driver = new Driver({
-    name: 'keys',
+    name: "keys",
     connection: {}
   });
 
@@ -14,7 +15,7 @@ describe("Cylon.Drivers.Keyboard", function() {
     beforeEach(function() {
       callback = spy();
 
-      stub(driver, 'defineDriverEvent');
+      stub(driver, "defineDriverEvent");
       driver.start(callback);
     });
 
@@ -22,8 +23,8 @@ describe("Cylon.Drivers.Keyboard", function() {
       driver.defineDriverEvent.restore();
     });
 
-    it('defines driver events for keys', function() {
-      expect(driver.defineDriverEvent).to.be.calledWith({ eventName: 'a' });
+    it("defines driver events for keys", function() {
+      expect(driver.defineDriverEvent).to.be.calledWith({ eventName: "a" });
     });
   });
 });

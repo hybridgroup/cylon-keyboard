@@ -1,27 +1,29 @@
-var Cylon = require('cylon');
+"use strict";
+
+var Cylon = require("cylon");
 
 Cylon.robot({
   connections: {
-    keyboard: { adaptor: 'keyboard' }
+    keyboard: { adaptor: "keyboard" }
   },
 
   devices: {
-    keyboard: { driver: 'keyboard' }
+    keyboard: { driver: "keyboard" }
   },
 
   work: function(my) {
-    my.keyboard.on('up', function(){
+    my.keyboard.on("up", function(){
       console.log("UP!");
     });
 
-    my.keyboard.on('down', function(){
+    my.keyboard.on("down", function(){
       console.log("DOWN!");
     });
 
-    my.keyboard.on('left', function(){
+    my.keyboard.on("left", function(){
       console.log("LEFT!");
     });
-    my.keyboard.on('RIGHT', function(){
+    my.keyboard.on("RIGHT", function(){
       console.log("RIGHT!");
     });
   }
