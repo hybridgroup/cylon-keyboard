@@ -16,7 +16,7 @@ sister project Gobot (http://gobot.io).
 
 Installing cylon.js with a keyboard support is pretty easy.
 
-    $ npm install cylon-keyboard
+    $ npm install cylon cylon-keyboard
 
 ## How to Use
 
