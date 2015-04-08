@@ -1,6 +1,6 @@
 {
   "name": "cylon-keyboard",
-  "version": "0.13.0",
+  "version": "0.14.0",
   "main": "lib/cylon-keyboard.js",
   "description": "Cylon module for Keyboard",
   "homepage": "http://cylonjs.com",
@@ -24,7 +24,7 @@
   },
 
   "dependencies": {
-    "cylon":    "~0.22.0",
+    "cylon":    "~1.0.0",
     "hybridgroup-keypress": "~0.1.0"
   }
 }
