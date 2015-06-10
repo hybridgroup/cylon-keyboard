@@ -2,7 +2,7 @@
 
 var Adaptor = lib("adaptor");
 
-var Keyboard = lib("keyboard");
+var Keyboard = lib("keyboards/node");
 
 describe("Cylon.Adaptors.Keyboard", function() {
   var adaptor = new Adaptor({

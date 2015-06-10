@@ -43,6 +43,11 @@ Cylon.robot({
 
 All that you need to do is plug the keyboard into your computer as usual.
 
+## Browser Support
+
+As of version `0.15.0`, `cylon-keyboard` also works in the browser.
+When packaged up with other Cylon modules using Browserify or another tool, it should work as normal.
+
 ## Documentation
 
 We're busy adding documentation to our web site at http://cylonjs.com/ please
