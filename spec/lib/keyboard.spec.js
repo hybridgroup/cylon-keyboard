@@ -1,9 +1,8 @@
-/* jshint expr:true */
 "use strict";
 
 var EventEmitter = require("events").EventEmitter;
 
-var keyboard = source("keyboard");
+var keyboard = lib("keyboard");
 
 describe("Keyboard", function() {
   it("is an EventEmitter", function() {

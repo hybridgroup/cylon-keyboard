@@ -16,7 +16,7 @@ Cylon.robot({
       console.log(key.name + " a pressed!");
     });
 
-    my.keyboard.on("keypress",function(key) {
+    my.keyboard.on("keypress", function(key) {
       console.log(key.name + " key press!");
     });
 

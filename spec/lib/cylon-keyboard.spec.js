@@ -1,10 +1,9 @@
-/* jshint expr:true */
 "use strict";
 
-var keyboard = source("cylon-keyboard");
+var keyboard = lib("cylon-keyboard");
 
-var Adaptor = source("adaptor"),
-    Driver = source("driver");
+var Adaptor = lib("adaptor"),
+    Driver = lib("driver");
 
 describe("Cylon.Keyboard", function() {
   describe("#adaptors", function() {

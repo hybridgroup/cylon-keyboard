@@ -1,9 +1,8 @@
-/* jshint expr:true */
 "use strict";
 
-var Adaptor = source("adaptor");
+var Adaptor = lib("adaptor");
 
-var Keyboard = source("keyboard");
+var Keyboard = lib("keyboard");
 
 describe("Cylon.Adaptors.Keyboard", function() {
   var adaptor = new Adaptor({

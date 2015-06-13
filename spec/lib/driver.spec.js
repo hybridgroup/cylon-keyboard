@@ -1,7 +1,6 @@
-/* jshint expr:true */
 "use strict";
 
-var Driver = source("driver");
+var Driver = lib("driver");
 
 describe("Cylon.Drivers.Keyboard", function() {
   var driver = new Driver({
