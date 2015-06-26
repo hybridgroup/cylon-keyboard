@@ -1,6 +1,6 @@
 "use strict";
 
-var keyboard = lib("cylon-keyboard");
+var keyboard = lib("../");
 
 var Adaptor = lib("adaptor"),
     Driver = lib("driver");
