@@ -2,6 +2,7 @@
 
 Version | Notes
 ------- | -----
+0.16.0  | Use Cylon 1.2.0
 0.15.0  | Use Cylon 1.1.0
 0.14.0  | Compatibility with Cylon 1.0.0
 0.13.0  | Provide number key support via `hybridgroup-keypress` fork
