@@ -24,7 +24,7 @@ Cylon.robot({
       console.log("LEFT!");
     });
 
-    my.keyboard.on("RIGHT", function() {
+    my.keyboard.on("right", function() {
       console.log("RIGHT!");
     });
   }
