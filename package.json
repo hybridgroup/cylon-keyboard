@@ -1,6 +1,6 @@
 {
   "name": "cylon-keyboard",
-  "version": "0.16.0",
+  "version": "0.17.0",
   "description": "Cylon module for Keyboard",
   "homepage": "http://cylonjs.com",
   "bugs": "https://github.com/hybridgroup/cylon-keyboard/issues",
@@ -22,6 +22,8 @@
     "robots",
     "robotics",
     "iot",
+    "drone",
+    "drones",
     "hardware",
     "keyboard"
   ],
