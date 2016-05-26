@@ -2,9 +2,13 @@
 
 var EventEmitter = require("events").EventEmitter;
 
-var keyboard = lib("keyboard");
+var keyboard = lib("keyboards/node");
 
 describe("Keyboard", function() {
+  beforeEach(function() {
+    keyboard.removeAllListeners();
+  });
+
   it("is an EventEmitter", function() {
     expect(keyboard).to.be.an.instanceOf(EventEmitter);
   });
@@ -39,22 +43,20 @@ describe("Keyboard", function() {
     });
   });
 
-  describe("#handleKeypress", function() {
+  describe("on keypress", function() {
     var ch = {},
-        key;
+        key,
+        emitSpy;
 
     beforeEach(function() {
-      stub(keyboard, "emit");
+      emitSpy = spy();
+      keyboard.on("a", emitSpy);
       key = { name: "a" };
-    });
-
-    afterEach(function() {
-      keyboard.emit.restore();
     });
 
     it("emits the key as an event from the keyboard", function() {
       keyboard.handleKeypress(ch, key);
-      expect(keyboard.emit).to.be.calledWith("a", key);
+      expect(emitSpy).to.be.calledWith(key);
     });
 
     context("if Ctrl-C is pressed", function() {
